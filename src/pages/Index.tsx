@@ -234,6 +234,123 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl font-bold text-gray-800 mb-4">Наш центр</h3>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Комфортная и безопасная среда для вашего выздоровления
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                <img 
+                  src="/img/5811ff52-65a9-4c49-ab72-e15ef5340315.jpg" 
+                  alt="Терапевтическая комната" 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="font-semibold text-lg">Терапевтические комнаты</h4>
+                    <p className="text-sm opacity-90">Уютные пространства для индивидуальных консультаций</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                <img 
+                  src="/img/359372db-6d5f-499d-aefa-8d4c71d9ed3e.jpg" 
+                  alt="Групповая терапия" 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="font-semibold text-lg">Групповые сессии</h4>
+                    <p className="text-sm opacity-90">Поддержка в кругу единомышленников</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                <img 
+                  src="/img/829cb6dc-3b41-46b8-95ca-2c76b3aa95f5.jpg" 
+                  alt="Сад для медитации" 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="font-semibold text-lg">Сад для медитации</h4>
+                    <p className="text-sm opacity-90">Спокойное место для размышлений</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                <img 
+                  src="/img/3eb718de-ce28-4b49-8633-458ad193422b.jpg" 
+                  alt="Консультация врача" 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="font-semibold text-lg">Медицинские консультации</h4>
+                    <p className="text-sm opacity-90">Профессиональная врачебная помощь</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                <img 
+                  src="/img/a6037cce-a100-4dde-962a-f040ebbcebb6.jpg" 
+                  alt="Путь к выздоровлению" 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="font-semibold text-lg">Путь к новой жизни</h4>
+                    <p className="text-sm opacity-90">Каждый шаг приближает к цели</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                <img 
+                  src="/img/6cbba793-b90d-4276-b4b0-03a9e8ef28c3.jpg" 
+                  alt="Фитнес зал" 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="font-semibold text-lg">Зал для йоги и фитнеса</h4>
+                    <p className="text-sm opacity-90">Восстановление через физическую активность</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button variant="outline" size="lg" className="px-8 py-3">
+              <Icon name="Eye" size={20} className="mr-2" />
+              Посмотреть виртуальную экскурсию
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Trust Section */}
       <section className="py-20 px-6">
         <div className="container mx-auto">
