@@ -47,9 +47,11 @@ export default function Index() {
                 <Icon name="MessageCircle" size={20} className="mr-2" />
                 Получить помощь сейчас
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-2">
-                <Icon name="Phone" size={20} className="mr-2" />
-                Горячая линия: 8-800-555-0123
+              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-2" asChild>
+                <a href="tel:88005550123">
+                  <Icon name="Phone" size={20} className="mr-2" />
+                  Горячая линия: 8-800-555-0123
+                </a>
               </Button>
             </div>
           </div>
@@ -416,7 +418,7 @@ export default function Index() {
                     </div>
                     <div className="text-left">
                       <div className="font-semibold text-gray-800">Горячая линия</div>
-                      <div className="text-gray-600">8-800-555-0123</div>
+                      <a href="tel:88005550123" className="text-blue-600 hover:text-blue-800 font-semibold text-lg">8-800-555-0123</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -442,7 +444,7 @@ export default function Index() {
                     </div>
                     <div className="text-left">
                       <div className="font-semibold text-gray-800">Запись на прием</div>
-                      <div className="text-gray-600">+7 (495) 123-45-67</div>
+                      <a href="tel:+74951234567" className="text-blue-600 hover:text-blue-800 font-semibold text-lg">+7 (495) 123-45-67</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -491,6 +493,40 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      {/* Floating Phone Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a 
+          href="tel:88005550123"
+          className="group bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 flex items-center gap-3"
+        >
+          <Icon name="Phone" size={24} className="animate-pulse" />
+          <span className="hidden group-hover:block whitespace-nowrap font-semibold bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full">
+            Экстренная помощь
+          </span>
+        </a>
+      </div>
+
+      {/* Emergency Contact Banner */}
+      <div className="fixed top-20 left-4 right-4 z-40 md:left-auto md:right-6 md:w-80">
+        <div className="bg-gradient-to-r from-red-500 to-red-600 text-white p-4 rounded-xl shadow-lg border border-red-400">
+          <div className="flex items-center gap-3">
+            <Icon name="AlertCircle" size={20} />
+            <div className="flex-1">
+              <div className="font-semibold text-sm">Нужна срочная помощь?</div>
+              <a href="tel:88005550123" className="text-sm opacity-90 hover:opacity-100">
+                Звоните: 8-800-555-0123
+              </a>
+            </div>
+            <button 
+              onClick={() => document.querySelector('.emergency-banner')?.classList.add('hidden')}
+              className="text-white/80 hover:text-white"
+            >
+              <Icon name="X" size={16} />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
